@@ -5,6 +5,7 @@ import { FeaturedPosts } from '../sections'
 
 export default function Home( {posts} ) {
   return (
+<>
     <div className="container mx-auto px-10 mb-8">
       <Head>
         <title>Team Epoch</title>
@@ -23,6 +24,8 @@ export default function Home( {posts} ) {
         </div>
       </div>
     </div>
+    
+    </>
   )
 }
 
