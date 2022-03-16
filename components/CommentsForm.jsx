@@ -20,26 +20,21 @@ const CommentsForm = ({slug}) => {
     const {value: comment} = commentEl.current;
     const {value: name} = nameEl.current;
     const {value: email} = emailEl.current;    
-    const {value: storeData} = storeDataEl.current;
+    const {checked: storeData} = storeDataEl.current;
 
     if (!name || !email || !comment) {
       setError(true);
       return;
     }
 
-    const commentObj = {
-      name,
-      email,
-      comment,
-      slug,
-    };
+    const commentObj = { name, email, comment, slug };
 
     if (storeData) {
       window.localStorage.setItem('name', name);
       window.localStorage.setItem('email', email);
     } else {
-      window.localStorage.removeItem('name');
-      window.localStorage.removeItem('email');
+      window.localStorage.removeItem('name', name);
+      window.localStorage.removeItem('email', email);
     }
 
     submitComment(commentObj)
