@@ -15,17 +15,16 @@ export default function Home( {posts} ) {
       <FeaturedPosts></FeaturedPosts>
       </div>
       <div className="ml-20 grid grid-cols-1 lg:grid-cols-12 gap-8"> 
-      <div className="lg:col-span-7 col-span-4"> 
+      <div className="lg:col-span-7 col-span-6"> 
         {posts.map((post) => <PostCard post={post.node} key={post.title} />)}
       </div>
-        <div className="lg:col-span-4 col-span-1"> 
+        <div className="lg:col-span-4 col-span-4"> 
           <div className="lg:sticky relative top-8">
               <PostWidget /> 
               <Categories />
           </div>
         </div>
       </div>
-      <Footer></Footer>
     </div>
     
     </>
