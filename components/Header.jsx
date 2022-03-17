@@ -25,6 +25,21 @@ const Header = () => {
                             BlogPage
                         </span>                    
                 </Link>
+                <Link href={`/`}>
+                        <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+                            FAQ
+                        </span>                    
+                </Link>
+                <Link href={`/`}>
+                        <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+                            News
+                        </span>                    
+                </Link>
+                <Link href={`/`}>
+                        <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+                            About
+                        </span>                    
+                </Link>
             </div>
         </div>
     </div>

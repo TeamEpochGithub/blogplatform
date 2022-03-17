@@ -11,14 +11,16 @@ export default function Home( {posts} ) {
         <title>Team Epoch</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className="ml-16">
       <FeaturedPosts></FeaturedPosts>
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12"> 
-      <div className="lg:col-span-8 col-span-1"> 
+      </div>
+      <div className="ml-20 grid grid-cols-1 lg:grid-cols-12 gap-8"> 
+      <div className="lg:col-span-7 col-span-4"> 
         {posts.map((post) => <PostCard post={post.node} key={post.title} />)}
       </div>
         <div className="lg:col-span-4 col-span-1"> 
           <div className="lg:sticky relative top-8">
-              <PostWidget />
+              <PostWidget /> 
               <Categories />
           </div>
         </div>
