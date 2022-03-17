@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { PostCard, Categories, PostWidget} from '../components'
+import { PostCard, Categories, PostWidget, Footer} from '../components'
 import {getPosts} from '../services'
 import { FeaturedPosts } from '../sections'
 
@@ -7,10 +7,10 @@ export default function Home( {posts} ) {
   return (
 <>
     <div className="container mx-auto px-10 mb-8">
-      <Head>
-        <title>Team Epoch</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+        <Head>
+          <title>Team Epoch</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
       <div className="ml-16">
       <FeaturedPosts></FeaturedPosts>
       </div>
@@ -25,6 +25,7 @@ export default function Home( {posts} ) {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
     
     </>
