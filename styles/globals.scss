@@ -15,21 +15,11 @@ body {
     width: 100%;
     height: 100vh;
     //background: linear-gradient(to right bottom, #5889a0, #93a0d1, #00a1ba, #01b18e, #32b37b);
-    background-image: linear-gradient(
-      180deg,
-      hsl(212deg 75% 69%) 0%,
-      hsl(208deg 67% 67%) 9%,
-      hsl(203deg 60% 66%) 18%,
-      hsl(197deg 54% 65%) 27%,
-      hsl(190deg 48% 63%) 36%,
-      hsl(182deg 42% 61%) 45%,
-      hsl(174deg 44% 61%) 55%,
-      hsl(166deg 48% 62%) 64%,
-      hsl(160deg 52% 62%) 73%,
-      hsl(155deg 57% 63%) 82%,
-      hsl(150deg 61% 63%) 91%,
-      hsl(146deg 66% 63%) 100%
-    );
+    background: #50a3a2;
+    background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+    background: -moz-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+    background: -o-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
     //background: #4a7fa3;
     //background-image: url("../public/bg.jpg");
     position: fixed;

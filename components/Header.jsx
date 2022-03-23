@@ -10,31 +10,50 @@ const Header = () => {
         .then((newCategories) => setCategories(newCategories))
    }, []);
   return (
-    <div className="container mx-auto px-10 mb-10">
-        <div className="border-b w-full inline-block border-white-400 py-10">
+    <div className="container mx-auto px-10 mb-8">
+        <div className="border-b w-full inline-block border-green-400 py-10">
             <div className="md:float-left block">
                 <Link href="/">
-                    <span className = "ml-8 cursor-pointer font-bold text-4xl text-white">
-                        Team Epoch
-                    </span>
+                <img 
+                    height="150px"
+                    width="150px"
+                    className="ml-6 hover:scale-110"
+                    src="https://images.squarespace-cdn.com/content/v1/5ef63c9ed5738e5562697e28/d28345b1-5fe6-4864-8eee-d0370c597cf1/epoch_logo_black.png?format=1500w"
+                />
                 </Link>
             </div>
-            <div className="mr-16 hidden md:float-left md:contents">
+            <div className="hidden md:float-left md:contents">
+            <Link href={`https://www.instagram.com/teamepoch.delft`}>
+                 <img 
+                height="30px"
+                width="30px"
+                className="md:float-right mt-4 -translate-x-6 align-middle text-black ml-4 font-semibold cursor-pointer hover:scale-110"
+                src="https://img.icons8.com/ios/100/000000/instagram-new--v1.png"
+                />                  
+                </Link>
+                <Link href={`https://www.linkedin.com/company/teamepoch/`}>
+                    <img 
+                    height="30px"
+                    width="30px"
+                    className="md:float-right mt-4 scale-110 -translate-x-6 align-middle text-black ml-4 font-semibold cursor-pointer hover:scale-150"
+                    src="https://img.icons8.com/windows/100/000000/linkedin.png"
+                    />                        
+                </Link>
                 <Link href={`/`}>
-                        <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+                        <span className="md:float-right -translate-x-6  mt-4 align-middle text-xl text-c ml-4 font-semibold cursor-pointer hover:scale-110">
                             BlogPage
                         </span>                    
                 </Link>
                 <Link href={`/`}>
-                        <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+                        <span className="md:float-right -translate-x-6 mt-4 align-middle text-xl text-black ml-4 font-semibold cursor-pointer hover:scale-110">
                             FAQ
                         </span>                    
                 </Link>
                 {categories.filter((category, index) => category.slug == 'news').map((category, index) => (
-                        <Link key={index} href={`/category/${category.slug}`}><span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">{category.name}</span></Link>
+                        <Link key={index} href={`/category/${category.slug}`}><span className="md:float-right -translate-x-6 mt-4 text-xl  align-middle text-black ml-4 font-semibold cursor-pointer hover:scale-110">{category.name}</span></Link>
                     ))}
-                <Link href={`/`}>
-                        <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+                <Link href={`/about`}>
+                        <span className="md:float-right mt-4 align-middle text-black -translate-x-6 text-xl  ml-4 font-semibold cursor-pointer hover:scale-110">
                             About
                         </span>                    
                 </Link>

@@ -20,8 +20,8 @@ const PostWidget = ( {categories, slug}) => {
   console.log(relatedPosts)
 
   return (
-    <div className=" bg-white shadow-lg rounded-lg p-8 mb-8">
-      <h3 className="text-xl mb-8 font-semibold border-b border-b border-emerald-400 pb-3">
+    <div className="bg-white shadow-lg shadow-stone-500/60 rounded-lg p-8 mb-8">
+      <h3 className="text-xl mb-8 text-black font-semibold border-b border-b border-green-500 pb-3">
         {slug ? 'Related Posts' : ' Recent Posts'}
       </h3>
       {relatedPosts.map((post) => (
@@ -35,11 +35,11 @@ const PostWidget = ( {categories, slug}) => {
                 src={post.featuredImage.url}
               />
           </div>
-          <div className="flex-grow ml-4">
-            <p className="text-gray-500 font-xs">
+          <div className="flex-grow text-black  ml-4">
+            <p className="text-green-500 font-xs">
               {moment(post.createdAt).format('MMM DD, YYYY')}
             </p>
-            <Link href={`/post/${post.slug}`} key={post.title} className="text-md ">
+            <Link href={`/post/${post.slug}`} key={post.title} className="text-md text-black">
               {post.title}
             </Link>
             </div>
