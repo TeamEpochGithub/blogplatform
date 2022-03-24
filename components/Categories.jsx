@@ -10,7 +10,7 @@ const Categories = () => {
       .then((newCategories) => setCategories(newCategories))
   }, []);
   return (
-    <div className="bg-white shadow-lg shadow-stone-500/60 rounded-lg p-8 mb-8 pb-6">
+    <div className="bg-white opacity-80 shadow-lg shadow-stone-500/60 rounded-lg p-8 mb-8 pb-6">
       <h3 className="text-xl text-black mb-8 font-semibold  pb-3 border-b border-green-500">
         Categories
       </h3>

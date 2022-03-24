@@ -11,7 +11,7 @@ export default function Home( {posts} ) {
           <title>Team Epoch</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-      <div className="ml-16">
+      <div className="ml-8 mr-14">
       <FeaturedPosts></FeaturedPosts>
       </div>
       <div className="ml-20 grid grid-cols-1 lg:grid-cols-12 gap-8"> 
@@ -37,4 +37,5 @@ export async function getStaticProps() {
     props: {posts}
   }
 }
+
 

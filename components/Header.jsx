@@ -10,8 +10,8 @@ const Header = () => {
         .then((newCategories) => setCategories(newCategories))
    }, []);
   return (
-    <div className="container mx-auto px-10 mb-8">
-        <div className="border-b w-full inline-block border-green-400 py-10">
+    <div className="container text-white mx-auto px-10 mb-8">
+        <div className="border-b mt-4 w-full inline-block border-white py-10">
             <div className="md:float-left block">
                 <Link href="/">
                 <img 
@@ -22,13 +22,13 @@ const Header = () => {
                 />
                 </Link>
             </div>
-            <div className="hidden md:float-left md:contents">
+            <div className="hidden md:float-left md:contents text-white">
             <Link href={`https://www.instagram.com/teamepoch.delft`}>
                  <img 
                 height="30px"
                 width="30px"
                 className="md:float-right mt-4 -translate-x-6 align-middle text-black ml-4 font-semibold cursor-pointer hover:scale-110"
-                src="https://img.icons8.com/ios/100/000000/instagram-new--v1.png"
+                src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"
                 />                  
                 </Link>
                 <Link href={`https://www.linkedin.com/company/teamepoch/`}>
@@ -36,7 +36,7 @@ const Header = () => {
                     height="30px"
                     width="30px"
                     className="md:float-right mt-4 scale-110 -translate-x-6 align-middle text-black ml-4 font-semibold cursor-pointer hover:scale-150"
-                    src="https://img.icons8.com/windows/100/000000/linkedin.png"
+                    src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png"
                     />                        
                 </Link>
                 <Link href={`/`}>
@@ -45,15 +45,15 @@ const Header = () => {
                         </span>                    
                 </Link>
                 <Link href={`/`}>
-                        <span className="md:float-right -translate-x-6 mt-4 align-middle text-xl text-black ml-4 font-semibold cursor-pointer hover:scale-110">
+                        <span className="md:float-right -translate-x-6 mt-4 align-middle text-xl ml-4 font-semibold cursor-pointer hover:scale-110">
                             FAQ
                         </span>                    
                 </Link>
                 {categories.filter((category, index) => category.slug == 'news').map((category, index) => (
-                        <Link key={index} href={`/category/${category.slug}`}><span className="md:float-right -translate-x-6 mt-4 text-xl  align-middle text-black ml-4 font-semibold cursor-pointer hover:scale-110">{category.name}</span></Link>
+                        <Link key={index} href={`/category/${category.slug}`}><span className="md:float-right -translate-x-6 mt-4 text-xl  align-middle  ml-4 font-semibold cursor-pointer hover:scale-110">{category.name}</span></Link>
                     ))}
                 <Link href={`/about`}>
-                        <span className="md:float-right mt-4 align-middle text-black -translate-x-6 text-xl  ml-4 font-semibold cursor-pointer hover:scale-110">
+                        <span className="md:float-right mt-4 align-middle -translate-x-6 text-xl  ml-4 font-semibold cursor-pointer hover:scale-110">
                             About
                         </span>                    
                 </Link>
