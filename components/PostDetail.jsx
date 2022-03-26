@@ -45,12 +45,12 @@ const PostDetail = ( {post}) => {
   
   return (
   
-    <div className="scale-x-90 bg-white opacity-80 shadow-lg shadow-stone-500/60 rounded-lg lg:p-8 pb-12 mb-36 text-justify">
+    <div className="scale-x-90 bg-transparent opacity-80 border border-gray-500 rounded-lg lg:p-8 pb-12 mb-36 text-justify">
       <div className="relative overflow-hidden shadow-md mb-6">
         <img 
           src={post.featuredImage.url} 
           alt={post.title} 
-          className="object-top h-full w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
+          className="object-top h-full w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg" />
       </div>
     <div className="px-4 lg:px-0">
       <div className="flex items-center mb-8 w-full">
@@ -62,20 +62,22 @@ const PostDetail = ( {post}) => {
               className="align-middle rounded-full"
               src={post.author.photo.url}
             />
-            <p className="inline align-middle text-gray-700 ml-2 font-medium text-lg">{post.author.name}</p>
+            <p className="inline align-middle text-gray-500 ml-2 font-medium text-lg">{post.author.name}</p>
         </div>
-        <div className="font-medium text-gray-700">
+        <div className="font-medium text-gray-500">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
           </svg>
           <span className="align-middle">{moment(post.createdAt).format('MMM DD, YYYY')}</span>
         </div>
       </div>
-      <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
+      <h1 className="mb-8 text-3xl text-white font-semibold">{post.title}</h1>
+      <div className="text-white">
       {post.content.raw.children.map((typeObj, index) => {
             const children = typeObj.children.map((item, itemindex) => getContentFragment(itemindex, item.text, item));
             return getContentFragment(index, children, typeObj, typeObj.type);
           })}
+          </div>
       </div>
     </div>
     

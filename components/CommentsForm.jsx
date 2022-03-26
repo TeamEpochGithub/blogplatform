@@ -48,11 +48,11 @@ const CommentsForm = ({slug}) => {
   };
 
   return (
-    <div className="scale-90 bg-white opacity-80 shadow-lg shadow-stone-500/60 -mt-4 rounded-lg p-8 pb-12 mb-8">
-      <h3 className="text-xl mb-8 font-semibold border-b pb-4">Any comments?</h3>
+    <div className="scale-90 bg-transparent opacity-80 -mt-4 border border-gray-500  rounded-lg p-8 pb-12 mb-8">
+      <h3 className="text-xl text-white mb-8 font-semibold border-b pb-4">Any comments?</h3>
       <div className="grid grid-cols-1 gap-4 mb-4">
       <textarea ref={commentEl}
-                className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700" 
+                className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-gray-200 bg-transparent text-gray-100 border border-gray-500  rounded-lg" 
                 name="comment" 
                 placeholder="Comment" />
   
@@ -60,12 +60,12 @@ const CommentsForm = ({slug}) => {
       <div className="grid grid-cols-1 gap-4 mb-4">
         <input type="text" 
               ref={nameEl}
-              className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700" 
+              className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-transparent text-gray-200 border border-gray-500 rounded-lg" 
               placeholder="Name" 
               name="name" />
         <input type="email"
               ref={emailEl}
-              className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700" 
+              className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-transparent text-gray-200 border border-gray-500  rounded-lg" 
               placeholder="Email" 
               name="email" />
       </div>
@@ -79,10 +79,10 @@ const CommentsForm = ({slug}) => {
       <div className="mt-8">
         <button type="button" 
                 onClick={handlePostSubmission} 
-                className="transition duration-500 ease hover:bg-blue-900 inline-block bg-green-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
+                className="transition duration-500 ease hover:bg-blue-900 inline-block bg-green-300 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
                   Publish Comment
         </button>
-        {showSuccessMessage && <span className="text-xl float-right font-semibold mt-3 text-green-500">Comment submitted for review</span>}
+        {showSuccessMessage && <span className="text-xl float-right font-semibold mt-3 text-green-300">Comment submitted for review</span>}
       </div>
     </div>
   )
