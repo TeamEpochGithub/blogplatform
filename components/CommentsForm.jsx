@@ -79,7 +79,10 @@ const CommentsForm = ({slug}) => {
       <div className="mt-8">
         <button type="button" 
                 onClick={handlePostSubmission} 
-                className="transition duration-500 ease hover:bg-blue-900 inline-block bg-green-300 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
+                className="transition duration-500 ease inline-block 
+                      bg-gradient-to-r from-blue-600 
+                        to-emerald-500 hover:scale-105
+                         text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
                   Publish Comment
         </button>
         {showSuccessMessage && <span className="text-xl float-right font-semibold mt-3 text-green-300">Comment submitted for review</span>}

@@ -43,24 +43,36 @@ const Header = () => {
                 </Link>
                 <Link href={`/`}>
                         <span className=" md:float-right -translate-x-6  mt-4 align-middle text-xl text-c ml-4 font-semibold cursor-pointer hover:scale-110
-                        transition duration-500 hover:text-green-600 text-4xl font-semibold">
+                        transition duration-500 hover:text-transparent
+                        hover:bg-clip-text 
+                        bg-gradient-to-r hover:from-emerald-300 
+                        hover:to-blue-400 text-4xl hover:font-semibold text-4xl font-semibold">
                             BlogPage
                         </span>                    
                 </Link>
  
                 <Link href={`/`}>
                         <span className="md:float-right -translate-x-6 mt-4 align-middle text-xl ml-4 font-semibold cursor-pointer hover:scale-110
-                        transition duration-500 hover:text-green-600 text-4xl font-semibold">
+                        font-semibold transition duration-500 hover:text-transparent
+                        hover:bg-clip-text 
+                        bg-gradient-to-r hover:from-emerald-300 
+                        hover:to-blue-400 text-4xl hover:font-semibold">
                             FAQ
                         </span>                    
                 </Link>
                 {categories.filter((category, index) => category.slug == 'news').map((category, index) => (
                         <Link key={index} href={`/category/${category.slug}`}><span className="md:float-right -translate-x-6 mt-4 text-xl  align-middle  ml-4 font-semibold cursor-pointer hover:scale-110
-                        transition duration-500 hover:text-green-600 text-4xl font-semibold">{category.name}</span></Link>
+                        transition duration-500 hover:text-transparent
+                        hover:bg-clip-text 
+                        bg-gradient-to-r hover:from-emerald-300 
+                        hover:to-blue-400 text-4xl hover:font-semibold text-4xl font-semibold">{category.name}</span></Link>
                     ))}
                 <Link href={`/about`}>
                         <span className="md:float-right mt-4 align-middle -translate-x-6 text-xl  ml-4 font-semibold cursor-pointer hover:scale-110
-                        transition duration-500 hover:text-green-600 text-4xl font-semibold">
+                        transition duration-500 hover:text-transparent
+                        hover:bg-clip-text 
+                        bg-gradient-to-r hover:from-emerald-300 
+                        hover:to-blue-400 text-4xl hover:font-semibold text-4xl font-semibold">
                             About
                         </span>                    
                 </Link>
