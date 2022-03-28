@@ -10,3 +10,5 @@ export {default as PostDetail} from './PostDetail';
 export {default as FeaturedPostCard} from './FeaturedPostCard';
 export {default as Footer} from './Footer';
 export { default as AdjacentPostCard } from './AdjacentPostCard';
+export { default as Questions } from './Questions';
+export { default as Modal } from './Modal';

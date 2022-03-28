@@ -9,7 +9,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
     
-    <div className="bg-transparent text-gray-500 opacity-80 p-0 ml-10 mr-10  lg:p-6 pb-12 mb-4">
+    <div className="bg-transparent text-gray-400 opacity-80 p-0 ml-10 mr-10  lg:p-6 pb-12 mb-4">
       <div className="ml-10 mr-10 justify-center mb-6 text-4xl font-bold text-white">We aim to have a positive impact on the world with AI</div>
       <div className="ml-10 mr-10 mb-6 text-justify">We want to pave an accessible path forward into what we 
             believe will be the most disrupting field of innovation in the near and distant future. 
@@ -31,7 +31,7 @@ export default function Home() {
                 ></iframe>
         </div>
 
-        <div className="bg-transparent opacity-80 text-gray-500  p-0 ml-10 mr-10  lg:p-6 pb-12 mb-4"> 
+        <div className="bg-transparent opacity-80 text-gray-400 p-0 ml-10 mr-10  lg:p-6 pb-12 mb-4"> 
         <div className="ml-4 mr-6 mb-6 font-bold text-4xl text-white">Who are we?</div>
         <div className="ml-4 mr-6 mb-6 text-justify">We are a Dream Team of TU Delft focused on AI.  
         As Team Epoch, we compete in AI competitions all around the world. Our team currently consists of 16 
@@ -46,7 +46,7 @@ export default function Home() {
          development of AI in the right direction: as a positive and useful solution to societal problems.</div>
       </div>
 
-         <div className="bg-transparent opacity-80 text-gray-500  p-0  ml-10 mr-10 lg:p-6 pb-12 mb-4">
+         <div className="bg-transparent opacity-80 text-gray-400  p-0  ml-10 mr-10 lg:p-6 pb-12 mb-4">
          <div className="ml-4 mr-6 mb-6 font-bold text-4xl text-white">What do we do?</div>
         <div className="ml-4 mr-6 mb-6  text-justify">The AI competitions that we compete in are in the field of data science. 
         The idea of these competitions is that as long as you have access to a computer and the internet, you can participate. 

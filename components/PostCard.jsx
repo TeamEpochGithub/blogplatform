@@ -7,7 +7,7 @@ const PostCard = ( {post}) => {
   console.log(post);
 
   return (
-    <div className="hover:scale-105 transition duration-500 bg-transparent opacity-80 border border-gray-500 rounded-lg p-0 lg:p-6 pb-12 mb-8">
+    <div className=" hover:scale-105 transition duration-500 bg-transparent opacity-80 border border-gray-500 rounded-lg p-0 lg:p-6 pb-12 mb-8">
       <div className="relative overflow-hidden shadow md pb-80 mb-6">
         <img 
             src ={post.featuredImage.url}
@@ -15,7 +15,10 @@ const PostCard = ( {post}) => {
             className = "object-top absolute h-80 w-full object-cover"
         />
           </div>
-        <h1 className="transition duration-500 text-center text-gray-200 mb-8 cursor-pointer hover:text-green-600 text-4xl font-semibold"> 
+        <h1 className="text-center text-gray-200 mb-8 cursor-pointer transition duration-400 hover:text-transparent
+                    hover:bg-clip-text 
+                    bg-gradient-to-r hover:from-blue-300 
+                    hover:to-emerald-400  text-4xl font-semibold"> 
           <Link href={`/post/${post.slug}`}>
             {post.title}
             </Link>
@@ -45,7 +48,7 @@ const PostCard = ( {post}) => {
           <Link href={`/post/${post.slug}`}>
             <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block
                         bg-gradient-to-r from-blue-600 
-                        to-emerald-500 text-4xl hover:font-semibold text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Continue Reading</span>
+                        to-emerald-500 text-2xl hover:font-semibold text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Continue Reading</span>
           </Link>
     </div>
   </div>

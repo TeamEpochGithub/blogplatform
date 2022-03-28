@@ -2,29 +2,38 @@ import Head from 'next/head'
 import { PostCard, Categories, PostWidget, Footer} from '../components'
 import {getPosts} from '../services'
 import { FeaturedPosts } from '../sections'
+import Typist from "react-typist";
+import "react-typist/dist/Typist.css";
 
 export default function Home( {posts} ) {
   return (
 <>
     <div className="container mx-auto px-10 mb-8">
         <Head>
-          <title>Team Epoch</title>
-          <link rel="icon" href="/favicon.ico" />
+          <title>Epoch Blog Page</title>
+          <link rel="icon" href="/iconBrowser.png" />
         </Head>
-      <div className="ml-8 mr-14 mt-28">
-      <FeaturedPosts></FeaturedPosts>
-      </div>
-      <div className="ml-20 grid grid-cols-1 lg:grid-cols-12 gap-8"> 
-      <div className="lg:col-span-7 col-span-6"> 
-        {posts.map((post) => <PostCard post={post.node} key={post.title} />)}
-      </div>
-        <div className="lg:col-span-4 col-span-4"> 
-          <div className="lg:sticky relative top-8">
-              <PostWidget /> 
-              <Categories />
-          </div>
+
+      
+      <div className="text-center mt-24 mb-0 text-xl justify-center font-bold text-white" style={{ color: 'white', fontSize: 60 }}>
+        <Typist>
+           Don’t miss the 
+          <span className="transition duration-500 text-transparent
+                    bg-clip-text 
+                    bg-gradient-to-r from-emerald-300 
+                    to-blue-400 font-semibold">{" news on AI"}</span>
+          </Typist>
         </div>
-      </div>
+          
+        <div className="text-center text-lg justify-center">
+        <div  className="text-gray-400 p-0 ml-10 mr-10 mb-6 lg:p-6 pb-12 mb-4">
+            We regularly post interesting articles here, so you can keep up too!
+        </div>
+        <div  className="text-white text-4xl font-semibold p-0 ml-10 mr-10 lg:p-6 pb-12">
+            Take a look at our recent news
+        </div>
+        </div>
+      <FeaturedPosts></FeaturedPosts>
     </div>
     
     </>
