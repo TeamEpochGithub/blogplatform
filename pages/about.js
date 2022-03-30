@@ -4,9 +4,9 @@ export default function Home() {
   return (
 <>
     <div className="container mx-auto px-10 mb-8 mt-20">
-        <Head>
-          <title>Team Epoch</title>
-          <link rel="icon" href="/favicon.ico" />
+      <Head>
+          <title>Epoch Blog Page</title>
+          <link rel="icon" href="/iconBrowser.png" />
         </Head>
     
     <div className="bg-transparent text-gray-400 opacity-80 p-0 ml-10 mr-10  lg:p-6 pb-12 mb-4">

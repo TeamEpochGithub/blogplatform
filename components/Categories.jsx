@@ -10,7 +10,7 @@ const Categories = () => {
       .then((newCategories) => setCategories(newCategories))
   }, []);
   return (
-    <div className="text-lg bg-transparent opacity-80 p-8 mb-8 pb-6">
+    <div className="text-lg bg-transparent opacity-80 p-8 -mt-16 mb-8 pb-6">
       <h3 className="text-xl text-white mb-8 font-semibold  pb-3 border-b border-gray-500">
         Categories
       </h3>
@@ -20,7 +20,8 @@ const Categories = () => {
                         transition duration-500 hover:text-transparent
                         hover:bg-clip-text 
                         bg-gradient-to-r hover:from-emerald-300 
-                        hover:to-blue-400">
+                        hover:to-blue-400
+                        hover:font-semibold">
             {category.name}
           </span>
         </Link>

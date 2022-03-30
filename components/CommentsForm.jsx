@@ -14,6 +14,8 @@ const CommentsForm = ({slug}) => {
     emailEl.current.value = window.localStorage.getItem('email');
   }, []);
 
+  
+
   const handlePostSubmission = () => {
     setError(false);
 
@@ -48,8 +50,8 @@ const CommentsForm = ({slug}) => {
   };
 
   return (
-    <div className="scale-90 bg-transparent opacity-80 -mt-4 border border-gray-500  rounded-lg p-8 pb-12 mb-8">
-      <h3 className="text-xl text-white mb-8 font-semibold border-b pb-4">Any comments?</h3>
+    <div className="scale-90 bg-transparent opacity-80 -mt-10 border-double border-4 border-gray-500  rounded-lg p-8 pb-12 mb-8">
+      <h3 className="text-2xl text-white font-semibold pb-4">Something to share?</h3>
       <div className="grid grid-cols-1 gap-4 mb-4">
       <textarea ref={commentEl}
                 className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-gray-200 bg-transparent text-gray-100 border border-gray-500  rounded-lg" 
@@ -85,7 +87,7 @@ const CommentsForm = ({slug}) => {
                          text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
                   Publish Comment
         </button>
-        {showSuccessMessage && <span className="text-xl float-right font-semibold mt-3 text-green-300">Comment submitted for review</span>}
+        {showSuccessMessage && <span className="text-lg float-right font-semibold mt-3 text-green-300">Comment submitted for review</span>}
       </div>
     </div>
   )
