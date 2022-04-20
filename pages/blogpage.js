@@ -1,11 +1,22 @@
 import Head from 'next/head'
 import { PostCard, Categories, PostWidget, Footer} from '../components'
-import {getPosts} from '../services'
+import {getPosts, getNotNewsPost, getCategories} from '../services'
 import { FeaturedPosts } from '../sections'
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
+import React, {useState, useEffect} from 'react';
+import postcss from 'postcss';
 
 export default function Home( {posts} ) {
+
+  const filtration = (post) => { 
+    const categories = Array.from(post.node.categories)
+    const boolean =  categories.some(cat => cat.slug == 'news');
+    return !boolean;
+  }
+
+  
+      
   return (
 <>
     <div className="text-lg container mx-auto px-10 mb-8">
@@ -31,7 +42,7 @@ export default function Home( {posts} ) {
       </div>
       <div className="ml-20 grid grid-cols-1 lg:grid-cols-12 gap-8"> 
       <div className="lg:col-span-7 col-span-6 scale-x-110"> 
-        {posts.map((post) => <PostCard post={post.node} key={post.title} />)}
+        {posts.filter((post) => filtration(post)).map((post) => <PostCard post={post.node} key={post.title} />)}
       </div>
         <div className="lg:col-span-4 col-span-4"> 
           <div className="lg:sticky relative top-8 -translate-y-8 translate-x-14">
