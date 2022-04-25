@@ -7,10 +7,10 @@ const PostCard = ( {post}) => {
   console.log(post);
 
   return (
-    <div className=" hover:scale-105 transition duration-500 bg-transparent opacity-80 border-double border-4 border-gray-500 rounded-lg p-0 lg:p-6 pb-12 mb-8">
+    <div className="hover:scale-105 transition duration-500 bg-transparent opacity-80 border-solid border-2 border-sky-400 rounded-lg p-0 lg:p-6 pb-12 mb-8">
       <div className="relative overflow-hidden shadow md pb-80 mb-6">
         <img 
-            src ={post.featuredImage.url}
+            src = {post.featuredImage.url}
             alt = {post.title}
             className = "border border-gray-500 rounded-lg object-top absolute h-80 w-full object-cover"
         />

@@ -25,7 +25,7 @@ const Header = () => {
                 </Link>
             </div>
             
-            <div className="hidden space-x-8 md:contents text-gray-500">
+            <div className="hidden space-x-8 md:contents text-gray-400">
             <Link href={`https://www.instagram.com/teamepoch.delft`}>
                  <img 
                 height="30px"
