@@ -11,10 +11,10 @@ export default function Home() {
     {
       title: 'Who are we?',
       content: `We are a Dream Team of TU Delft focused on AI.  
-      As Team Epoch, we compete in AI competitions all around the world. Our team currently consists of 16 
-      motivated students with different study backgrounds and skills ranging from Computer Science to Technology,
-       Policy and Management. Because of these diverse skill sets, we are confident in our ability to succeed.
-       Team Epoch competes simultaneously in multiple competitions with different 
+         As Team Epoch, we compete in AI competitions all around the world. Our team currently consists of 16 
+         motivated students with different study backgrounds and skills ranging from Computer Science to Technology,
+         Policy and Management. Because of these diverse skill sets, we are confident in our ability to succeed.\n 
+         Team Epoch competes simultaneously in multiple competitions with different 
          fields such as healthcare, transportation, sports, or business. By having a broad range of topics for the 
          competitions,our team will thrive with well-trained and well-rounded AI engineers by the end of the year.
          By enabling students with various backgrounds to compete 
@@ -24,7 +24,7 @@ export default function Home() {
     },
     {
         title: 'What do we do?',
-        content: `The AI competitions that we compete in are in the field of data science. 
+        content: `The AI competitions that we compete in are in the field of data science. \n
         The idea of these competitions is that as long as you have access to a computer and the internet, you can participate. 
         The organizers of the competition usually provide a large dataset and the objective of the challenge.
         This is a real-life problem for which most of the time a guideline for the solution already exists, called the 'baseline'.
@@ -43,25 +43,15 @@ export default function Home() {
         `
     },
     {
-        title: 'What is AI?',
-        content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
-        reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
-        quaerat iure quos dolorum accusantium ducimus in illum vero commodi
-        pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
-        quidem maiores doloremque est numquam praesentium eos voluptatem amet!
-        Repudiandae, mollitia id reprehenderit a ab odit!`
-    },
-    {
       title: 'How to join us',
-      content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-      quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-      dolor ut sequi minus iste? Quas?`
+      content: `Follow us on Instagram or LindkedIn for updates in recruitement! This happens around February of every year. If you
+      can't contain yourself until then contact us through our email.`
     },    
     {
         title: 'How to contribute',
-        content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-        quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-        dolor ut sequi minus iste? Quas?`
+        content:`We are open to any new ideas or suggestions you might have! Drop a message to our email with how you would like to contribute, it
+        can be by writing your own blog, adding the latest news to this page or even joining our team! 
+        ` 
     }
   ];
 
@@ -83,7 +73,7 @@ export default function Home() {
          for us?
           </Typist>
     </div>
-    <div className="text-center mb-8 text-lg justify-center font-semibold text-white">
+    <div className="text-center mb-8 text-lg justify-center text-white">
         Click on the following topics to know more!
     </div>
         <div className="mb-2 text-xl text-white  ">
@@ -97,7 +87,7 @@ export default function Home() {
                         bg-gradient-to-r from-emerald-500 
                             to-blue-500 hover:scale-105
                             text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
-                    <a href="mailto:tgomezmena211002@gmail.com">Let us know if you have any other questions </a>        
+                    <a href="mailto:operationsteamepoch@gmail.com">Contact us for any other questions! </a>        
             </button>
             </div>
       </div>

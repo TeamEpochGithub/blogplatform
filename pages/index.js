@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { PostCard, Categories, PostWidget, Footer} from '../components'
 import {getPosts} from '../services'
 import { FeaturedPosts } from '../sections'
 import Typist from "react-typist";
