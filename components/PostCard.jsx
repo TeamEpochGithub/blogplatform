@@ -7,7 +7,7 @@ const PostCard = ( {post}) => {
   console.log(post);
 
   return (
-    <div className="hover:scale-105 transition duration-500 bg-transparent opacity-80 border-solid border-2 border-sky-400 rounded-lg p-0 lg:p-6 pb-12 mb-8">
+    <div className="hover:scale-105 transition duration-500 bg-transparent opacity-80 border-solid border-2 border-sky-300 rounded-lg p-0 lg:p-6 pb-12 mb-8">
       <div className="relative overflow-hidden shadow md pb-80 mb-6">
         <img 
             src = {post.featuredImage.url}
@@ -47,8 +47,8 @@ const PostCard = ( {post}) => {
         </p>
         <div className="text-center">
           <Link href={`/post/${post.slug}`}>
-            <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block
-                        bg-gradient-to-r from-blue-600  hover:border-2
+            <span className="transition duration-500 ease transform inline-block
+                        bg-gradient-to-r from-blue-600 
                         to-emerald-500 hover:font-semibold text-lg font-medium 
                         rounded-full text-white px-8 py-3 cursor-pointer
                         ">Continue Reading</span>

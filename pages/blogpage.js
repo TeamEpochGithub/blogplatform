@@ -47,17 +47,18 @@ export default function Home( {posts} ) {
       <div className="ml-8 mr-14 mt-8 text-xl  text-gray-400 pb-3">
         Sort by categories:
       </div>
-      <div class="ml-8 flex flex-wrap lg:col-span-10 ">
+      <div class="ml-8 flex flex-wrap lg:col-span-10">
         {categories.filter((category) => (category.slug != 'news')).map((category) => (
         <Link key={category.slug} href={`/category/${category.slug}`}>
-            <label class="border-dotted border-2 border-sky-500 relative mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 
+            <label class="hover:translate-y-1 border-dotted border-2 border-sky-300 relative mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 
               py-3 transition" >
           <span className="text-xl cursor-pointer text-gray-400 block cursor-pointer hover:scale-110
                         transition duration-500 hover:text-transparent
                         hover:bg-clip-text 
                         bg-gradient-to-r hover:from-emerald-300 
                         hover:to-blue-400
-                        hover:font-semibold">
+                        hover:font-semibold
+                        ">
             {category.name}
           </span>
       </label>
@@ -65,7 +66,7 @@ export default function Home( {posts} ) {
         </Link>
       ))}
       <Link href={`/news`}>
-            <label class="text-center border-dotted border-2 border-sky-500 relative mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 
+            <label class="hover:translate-y-1 text-center border-dotted border-2 border-sky-300 relative mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 
               py-3 transition" >
           <span className="text-xl cursor-pointer text-gray-400 block cursor-pointer hover:scale-110
                         transition duration-500 hover:text-transparent
