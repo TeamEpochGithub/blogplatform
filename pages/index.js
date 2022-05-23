@@ -24,13 +24,13 @@ export default function Home( {posts} ) {
           </Typist>
         </div>
         <div className="text-center text-lg">
-        <div  className="text-gray-400 p-0 lg:p-6 pb-12">The last decade has seen 
+        <div  className="text-gray-400 mb-8 p-0 lg:p-6 pb-12">The last decade has seen 
         great advances in artificial intelligence, we want to pave an accessible path 
           forward into what we believe will be the most disrupting field of innovation in the near and distant future. 
           But what does the near future look like?  
           <span className='text-gray-400'>{" We regularly post interesting articles here, so you can keep up too!"}</span>
         </div>
-        <div  className="text-gray-400 text-lg mb-4 p-0 mr-10 lg:p-6 pb-12">
+        <div  className="text-gray-400 text-lg -mb-4 p-0 mr-10 lg:p-6 pb-12">
             Take a look at the latest news:
         </div>
         </div>
