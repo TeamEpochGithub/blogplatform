@@ -12,4 +12,4 @@ export {default as Footer} from './Footer';
 export { default as AdjacentPostCard } from './AdjacentPostCard';
 export { default as Questions } from './Questions';
 export { default as Modal } from './Modal';
-export { default as Loader } from './Loader';
+export { default as Loader } from './Loader'; 
